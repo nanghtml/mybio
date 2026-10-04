@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ហ៊ុន សំណាង - Hun Samnang</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Khmer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Kantumruy Pro"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Kantumruy Pro', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between p-4 sm:p-6">
+
+    <main class="max-w-md w-full mx-auto my-auto py-8 flex flex-col items-center text-center">
+        <!-- Profile Picture Section -->
+        <div class="relative mb-5">
+            <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-md bg-sky-100 flex items-center justify-center overflow-hidden">
+                <img src="https://raw.githubusercontent.com/nanghtml/profile/refs/heads/main/2FCDDE9D-C721-499A-BD22-2BA3B25FFA32.png" 
+                     alt="Hun Samnang Profile" 
+                     class="w-full h-full object-cover"
+                     onerror="this.onerror=null; this.src='https://placehold.co/128x128/e2e8f0/475569?text=Samnang';">
+            </div>
+            <!-- Online Indicator -->
+            <span class="absolute bottom-1 right-1 w-5 h-5 bg-emerald-500 border-2 border-white rounded-full" title="Online"></span>
+        </div>
+
+        <!-- Name & Bio -->
+        <h1 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-1">
+            ហ៊ុន សំណាង
+        </h1>•
+        <p class="text-slate-600 text-sm max-w-xs leading-relaxed mb-6">
+            សូមស្វាគមន៍! អ្នកអាចចុច Link ខាងក្រោមដើម្បីទាក់ទងមកខ្ញុំបានតាមបណ្តាញសង្គមខាងក្រោម
+        </p>
+
+        <!-- Social Link Buttons -->
+        <div class="w-full space-y-3">
+            <!-- Facebook Button -->
+            <a href="https://www.facebook.com/samnanghunreal/" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-between w-full p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow transition group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-sm font-semibold text-slate-800">Facebook</div>
+                        <div class="text-xs text-slate-500">samnanghunreal</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- Telegram Button -->
+            <a href="https://t.me/hunsamnang" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-between w-full p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-sky-500 hover:shadow transition group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-sky-50 text-sky-500 flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-sm font-semibold text-slate-800">Telegram</div>
+                        <div class="text-xs text-slate-500">@hunsamnang</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/hunsamnang423/" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-between w-full p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-pink-500 hover:shadow transition group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-pink-50 text-pink-500 flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-sm font-semibold text-slate-800">Instagram</div>
+                        <div class="text-xs text-slate-500">@hunsamnang423</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/hunsamnang" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-between w-full p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 hover:shadow transition group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-500 flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-sm font-semibold text-slate-800">WhatsApp</div>
+                        <div class="text-xs text-slate-500">@hunsamnang</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="max-w-md w-full mx-auto text-center py-4 text-xs text-slate-400">
+        &copy; 2026 ហ៊ុន សំណាង (Hun Samnang)
+    </footer>
+
+</body>
+</html>
